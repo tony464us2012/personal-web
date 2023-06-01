@@ -5,14 +5,15 @@ import Layout from '../components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '../components/Icons'
-import project1 from '../../public/images/projects/crypto-screener-cover-image.png'
+import cryptoScreener from '../../../public/images/projects/crypto-screener-cover-image.jpg'
 
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
-        <article className='w-full flex items-center justify-between relative
+        <article className='w-full flex items-center justify-between relative rounded-br-2xl
          rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12'>
-            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] 
+            bg-dark rounded-br-3xl' />
             <Link href={link} target='_blank'
             className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
                 <Image src={img} alt={title} className='w-full h-auto' />
@@ -44,6 +45,8 @@ const Project = ({ title, type, img, link, github }) => {
     return (
         <article className='w-full flex items-center justify-center rounded-2xl
         border border-solid border-dark bg-light p-6 relative'>
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] 
+            bg-dark rounded-br-3xl' />
            <Link href={link} target='_blank'
            className='w-full cursor-pointer overflow-hidden rounded-lg'>
                <Image src={img} alt={title} className='w-full h-auto' />
@@ -84,13 +87,13 @@ const projects = () => {
         <main className='w-full mb-16 flex flex-col items-center justify-center'>
             <Layout className='pt-16'>
                 <AnimatedText text='Imagination is more important than knowledge' className='mb-16' />  
-                <div className='grid grid-cols-12 gap-24'>
+                <div className='grid grid-cols-12 gap-24 gap-y-32'>
                     <div className='col-span-12'>
                         <FeaturedProject 
                             type='Featured Project'
                             title='Project-1'
                             summary='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
-                            img= {project1}
+                            img= {cryptoScreener}
                             link='https://www.google.com'
                             github='https://www.google.com'
                          />
@@ -99,7 +102,7 @@ const projects = () => {
                     <Project 
                             type='Featured Project'
                             title='Project-1'
-                            img= {project1}
+                            img= {cryptoScreener}
                             link='https://www.google.com'
                             github='https://www.google.com'
                          />
@@ -108,7 +111,7 @@ const projects = () => {
                     <Project 
                             type='Featured Project'
                             title='Project-1'
-                            img= {project1}
+                            img= {cryptoScreener}
                             link='https://www.google.com'
                             github='https://www.google.com'
                          />
@@ -120,7 +123,7 @@ const projects = () => {
                             type='Featured Project'
                             title='Project-1'
                             summary='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
-                            img= {project1}
+                            img= {cryptoScreener}
                             link='https://www.google.com'
                             github='https://www.google.com'
                          />
@@ -129,7 +132,7 @@ const projects = () => {
                     <Project 
                             type='Featured Project'
                             title='Project-1'
-                            img= {project1}
+                            img= {cryptoScreener}
                             link='https://www.google.com'
                             github='https://www.google.com'
                          />
@@ -138,7 +141,7 @@ const projects = () => {
                     <Project 
                             type='Featured Project'
                             title='Project-1'
-                            img= {project1}
+                            img= {cryptoScreener}
                             link='https://www.google.com'
                             github='https://www.google.com'
                          />

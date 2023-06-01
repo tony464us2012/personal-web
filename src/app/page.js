@@ -12,8 +12,7 @@ import lightBulb from '../../public/images/profile/miscellaneous_icons_1.svg'
 export default function Home() {
   return (
     <>
-      <NavBar />
-    <main className='flex item-center text-dark w-full min-h-screen'>
+    <main className='flex item-center text-dark dark:bg-dark w-full min-h-screen dark:text-light'>
       <Layout className='pt-0'>
         <div className='flex items-center justify-center w-full h-full'>
           <div className='w-1/2'>
@@ -27,7 +26,8 @@ export default function Home() {
             </p>
             <div className='flex items-center self-start mt-2'>
               <Link href='/Resume.pdf' target={'_blank'} className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid
-              border-border-transparent hover:border-dark' download={true}>
+              border-border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
+              hover:dark:border-light' download={true}>
                 Resume
                 <LinkArrow className='w-6 ml-2 text-sm' />
               </Link>
