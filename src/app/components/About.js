@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import profilePic from '/public/images/profile/developer-pic-2.jpg'
 import { motion, useInView, useMotionValue, useSpring } from 'framer-motion'
 import { useRef } from 'react'
-// import Skills from './Skills'
+import Skills from './Skills'
 import Experience from '../components/Experience'
 import Education from '../components/Education'
 

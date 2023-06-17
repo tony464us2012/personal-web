@@ -25,8 +25,8 @@ module.exports = {
       colors: {
         dark: '#1b1b1b',
         light: '#f5f5f5',
-        primary: 'red',
-        primaryDark: '#58E6D9'
+        primary: 'green',
+        primaryDark: 'green',
       }, 
       animation: {
         'spin-slow': 'spin 8s linear infinite',
