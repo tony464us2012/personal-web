@@ -5,13 +5,13 @@ import LiIcon from './LiIcon'
 const Details = ({ type, time, place, info }) => {
     const ref = useRef(null)
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
-            <LiIcon reference={ref} />
+        <li ref={ref} className='my-8 first:mt-12 last:mb-6 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
+            {/* <LiIcon reference={ref} /> */}
             <motion.div 
             className='text-dark dark:text-light/75'
             initial={{y:50}}
             whileInView={{y:0}}
-            transition={{duration:0.5, type:'spring'}}>
+            transition={{duration: 1, type:'spring'}}>
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                     {type}
                 </h3>
@@ -31,10 +31,14 @@ const Education = () => {
         }
     )
   return (
-    <div className='my-64'>
-        <h2 className='font-bold text-7xl mb-32 w-full text-center text-dark md:text-6xl xs:text-4xl md:mb-16'>
-            Education
-        </h2>
+    <div className='my-32'>
+        <motion.div 
+          className='text-dark dark:text-light/75'
+          initial={{y:50}}
+          whileInView={{y:0}}
+          transition={{duration: 2, type:'spring'}}>
+            <h1 className='text-5xl font-bold text-center text-dark dark:text-light mb-8 lg:!text-5xl sm:!text-4xl xs:!text-4xl sm:mb-8'>Education</h1>    
+        </motion.div> 
         
         <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
 
