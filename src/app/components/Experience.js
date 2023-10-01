@@ -1,7 +1,5 @@
 import React, { useRef } from 'react'
-import { useScroll, motion } from 'framer-motion'
-import LiIcon from './LiIcon'
-import AnimatedText from './AnimatedText'
+import { motion } from 'framer-motion'
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null)
@@ -13,24 +11,18 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             initial={{y:100}}
             whileInView={{y:0}}
             transition={{duration: 1, type:'slide-right'}}>
-                <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position}&nbsp;
+                <h3 className='capitalize font-bold text-2xl mb-1 sm:text-xl xs:text-lg'>{position}&nbsp;
                     <a href={companyLink} target='_blank' className='text-primary capitalize dark:text-primaryDark'> {company}</a>
                 </h3>
                 <span className='capitalize font-medium text-dark/75
                 dark:text-light/75 xs:text-sm'>{time} | {address} </span>
-                <p className='font-medium w-full md:text-sm'>{work}</p>
+                <p className='font-medium w-full mt-1 md:text-sm'>{work}</p>
             </motion.div>
         </li>
 )}
 
 const Experience = () => {
-    const ref = useRef(null)
-    const {scrollYProgress} = useScroll(
-        {
-            target: ref,
-            offset: ["center end", "center center"]
-        }
-    )
+   
   return (
     <div className='my-32'>
         
@@ -43,18 +35,18 @@ const Experience = () => {
             <h1 className='text-5xl font-bold text-center text-dark dark:text-light mb-8 lg:!text-5xl sm:!text-4xl xs:!text-4xl sm:mb-8'>Experience</h1>    
         </motion.div> 
         
-        <div ref={ref} className='w-full red mx-auto relative lg:w-[90%] md:w-full'>
+        <div className='w-full mx-auto relative lg:w-[90%] md:w-full'>
 
         {/* <motion.div style={{scaleY: scrollYProgress}} 
         className='absolute left-12 mt-10 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]' /> */}
 
-            <ul className='w-full flex flex-col items-start justify-between ml-4  xs:ml-2'>
+            <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details 
                     position='Web Developer'
                     company='109 Burger Joint'
                     companyLink='https://109burgerjoint.com/'
                     address='Miami, FL'
-                    time='2019 - Present'
+                    time='2020 - 2022'
                     work='Achieved a 30% increase in takeout sales revenue 
                     by eliminating third-party ordering platforms and their 
                     fees. I implemented a user-friendly account system that 
