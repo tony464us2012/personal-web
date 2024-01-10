@@ -64,8 +64,7 @@ const About = () => {
                     </p>
                     <p className='my-4 font-medium text-dark dark:text-light'>
                         I am a self-taught developer and designer. I have a passion for learning and
-                        sharing my knowledge with others as publicly as possible. I am a big believer of
-                        open-source and giving back to the community.
+                        sharing my knowledge with others as publicly as possible.
                     </p>
                     <p className='font-medium text-dark dark:text-light'>
                         I am currently working as a freelance developer and designer. I am available for

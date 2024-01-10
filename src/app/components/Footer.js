@@ -26,8 +26,8 @@ const Footer = () => {
                 >
                     {
                         mode === 'dark' ? 
-                            <SunIcon className={'fill-dark'} />
-                        :   <MoonIcon className={'fill-dark'} />
+                            <SunIcon className={'fill-light'} />
+                        :   <MoonIcon className={'fill-light'} />
                     }
                 </button>
         </Layout>

@@ -96,11 +96,11 @@ export const DribbbleIcon = ({ className, ...rest }) => (
 export const SunIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="2rem"
+    height="2rem"
     viewBox="0 0 24 24"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
   >
     <g
       fill="none"
@@ -274,13 +274,13 @@ export const SunIcon = ({ className, ...rest }) => (
 export const MoonIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="2rem"
+    height="2rem"
     viewBox="0 0 24 24"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
   >
-    <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
+    <rect x="0" y="0" width="4" height="4" fill="rgba(255, 255, 255, 0)" />
     <g
       fill="none"
       stroke="currentColor"
@@ -447,7 +447,7 @@ export const LinkArrow = ({ className, ...rest }) => (
     width={24}
     height={24}
     viewBox="0 0 24 24"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path fill="none" d="M0 0h24v24H0z" />
